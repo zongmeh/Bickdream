@@ -1,0 +1,156 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- :: Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- :: Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <!-- :: Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'assets/images/favicon.png' %}">
+
+    <!-- :: Title -->
+    <title>Healthcare Done right - Home</title>
+
+    <!-- :: Fontawesome -->
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome/css/all.min.css' %}">
+
+    <!-- :: Flaticon -->
+    <link rel="stylesheet" href="{% static 'assets/fonts/flaticon/flaticon.css' %}">
+
+    <!-- :: Animate -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+    <!-- :: Owl Carousel -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+
+    <!-- :: Lity -->
+    <link rel="stylesheet" href="{% static 'assets/css/lity.min.css' %}">
+
+    <!-- :: Nice Select CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+
+    <!-- :: DatePicker CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/datepicker.min.css' %}">
+
+    <!-- :: TimePicker CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/jquery.timepicker.min.css' %}">
+
+    <!-- :: Magnific Popup CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+
+    <!-- :: Style CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <!-- :: Style Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav>
+
+{#          <!-- :: Loading -->#}
+{#        <div class="loading">#}
+{#            <div class="loading-box">#}
+{#                <img class="img-fluid" src="{% static 'assets/images/loading.gif' %}" alt="Loading">#}
+{#            </div>#}
+{#        </div>#}
+
+        <!-- :: All Navbar -->
+        <header class="all-navbar" id="page">
+
+            <!-- :: Top Navbar -->
+            <div class="top-navbar">
+                <div class="container">
+                    <div class="content-box d-flex align-items-center justify-content-between">
+                        <ul class="website-info">
+                            <li>
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:healthcaredoneright.et@gmail.com">healthcaredoneright.et@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                110 Oak Meadow Dr Clinton,MS 39056
+                            </li>
+                            <li>
+                                <i class="far fa-clock"></i>
+                                mon - Sat : 8:00 AM - 7:00 PM
+                            </li>
+                        </ul>
+                        <ul class="website-icon-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- :: Navbar -->
+            <nav class="nav-bar">
+                <div class="container">
+                    <div class="content-box d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <a href="index.html" class="logo-nav">
+                                <img class="img-fluid one" src="{% static 'assets/images/logo.png' %}" alt="01 Logo">
+                            </a>
+                            <a href="#open-nav-bar-menu" class="open-nav-bar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="nav-bar-links" id="open-nav-bar-menu">
+                            <ul class="level-1">
+                                <li class="item-level-1">
+                                    <a href="{% url 'home' %}" class="link-level-1">Home</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'services' %}" class="link-level-1">Services</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'employer' %}" class="link-level-1">Employers</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'job seeker' %}" class="link-level-1">Job Seekers</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'faqs' %}" class="link-level-1">Faqs</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'contact' %}" class="link-level-1">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="nav-bar-tools d-flex align-items-center justify-content-between">
+                            <li class="item phone">
+                                <div class="nav-bar-contact">
+                                    <i class="flaticon-emergency-call"></i>
+                                    <div class="content-box">
+                                        <span>Phone Number</span>
+                                        <a href="tel:+17692780516">+1 (769) 278 - 0516</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <span class="menu-icon open"><i class="fas fa-list"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </nav>
+
+</body>
+</html>

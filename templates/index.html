@@ -1,0 +1,517 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+    <body>
+
+
+    <!-- :: Menu Box -->
+    <div class="menu-box">
+        <div class="inner-menu">
+            <div class="website-info">
+                <a href="{% url 'home' %}l" class="logo"><img class="img-fluid"
+                                                              src="{% static 'assets/images/logo.png' %}"
+                                                              alt="01 Logo"></a>
+                <p>On a simple yet powerful mission. Change healthcare, One Patient and One Healthcare professional at a
+                    time. That is Healthcare Done Right.</p>
+            </div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <div class="contact-box">
+                    <i class="flaticon-call"></i>
+                    <div class="box">
+                        <a class="phone" href="tel:0088609830">+1 (769) 278 - 0516</a>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="flaticon-email"></i>
+                    <div class="box">
+                        <a class="mail"
+                           href="mailto:healthcaredoneright.et@gmail.com">healthcaredoneright.et@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="flaticon-location"></i>
+                    <div class="box">
+                        <p>110 Oak Meadow Dr Clinton,MS 39056</p>
+                    </div>
+                </div>
+            </div>
+            <div class="follow-us">
+                <h4>Follow Us</h4>
+                <ul class="icon-follow">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <span class="menu-box-icon exit"><i class="fas fa-times"></i></span>
+        </div>
+    </div>
+
+    <!-- :: Header -->
+    <section class="header header-3">
+        <div class="header-carousel owl-carousel owl-theme">
+            <div class="sec-hero display-table" style="background-image: url({% static 'assets/images/header.jpg' %})">
+                <div class="table-cell">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 d-flex align-items-center justify-content-between">
+                                <div class="banner">
+                                    <h1 class="handline">The Healthcare recruiter
+                                        who actually cares!</h1>
+                                    <p class="about-website">we’re more than a recruitment agency, Others end at
+                                        staffing, We go beyond staffing to actually ensure you
+                                        get the proper care you desire</p>
+                                    <a class="btn-1 move-section" href="{% url 'contact' %}">Get In touch</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center justify-content-end header-features">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- :: About Us -->
+    <section class="about-us about-us-3 py-100" id="start">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-img-box">
+                        <div class="img-box"
+                             style="background-image: url({% static 'assets/images/intro_cover.jpg' %})"></div>
+                        <!-- <div class="about-experience">
+                            <i class="flaticon-stethoscope"></i>
+                            <div class="experience-counter">4456</div>
+                            <h5>Total Branches</h5>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="about-text-box">
+                        <div class="sec-title">
+                            <h2>Dedicated to Hope, Care, and Service.</h2>
+                            <h3>Quality Healthcare Starts With Quality Recruiting</h3>
+                        </div>
+                        <p>Quality healthcare is the driving force behind every dream we have. And to dream is to be
+                            healthy. That's why we are here to change that. With Healthcare Done Right, Every second
+                            matters.</p>
+                        <p class="last">For Over 10 years we have gathered the experience as professionals in active
+                            service
+                            and its about time we make a lasting change. </p>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn-1" href="services.html">Our Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- :: Departments -->
+    <section class="departments departments-2 departments-3 py-100-70">
+        <div class="container">
+            <div class="sec-title sec-title-3">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2>Service at its best!</h2>
+                        <h3>Our Services</h3>
+                    </div>
+                    <!-- <div class="col-lg-5">
+                        <p class="sec-explain">MedDoctors Are A Medical And Health Department Provider Institutions. Suitable For Healthcare, Medical, Doctor, Dental, Dentist, Pharmacy, Health And Any Related Medical Care Field.</p>
+                        <a class="btn-1 sec-btn" href="contact.html">Get In Touch</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="departments-item">
+                        <div class="item-content">
+                            <h4>Medicaid Waiver</h4>
+                            <ul class="service-list-items">
+                                <li class="list-item">In-Home respite</li>
+                                <li>Patient Care Services</li>
+                                <li>Home and Community Support</li>
+                                <li>In-Home Nursing Respite</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="more">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="departments-item">
+                        <div class="item-content">
+                            <h4>Private Duty Nursing</h4>
+                            <ul class="service-list-items">
+                                <li>Trach care and suction</li>
+                                <li>Peg-Tube</li>
+                                <li>G-Tube</li>
+                                <li>Naso-gastric Tube</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="more">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="departments-item">
+                        <div class="item-content">
+                            <h4>Sitter Services</h4>
+                            <ul class="service-list-items">
+                                <li>In-Home</li>
+                                <li>In-Facility</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="more">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="departments-item">
+                        <div class="item-content">
+                            <h4>Others</h4>
+                            <ul class="service-list-items">
+                                <li>Staffing Doctors Office, Wound Care</li>
+                                <li>Nursing Homes & Hospitals with RN’s</li>
+                                <li>LPN’s, CNA’s, Medical Assistants,</li>
+                                <li>ADL’s( acitivities of daily living)</li>
+                            </ul>
+                            <a href="#contact" class="more">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- :: About Us -->
+    <section class="about-us about-us-2 about-us-home-3 py-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-text-box">
+                        <div class="sec-title sec-title-3">
+                            <h2>For healthcare professionals</h2>
+                            <h3>Join us on the mission and become an advocate for Quality healthcare.</h3>
+                            <p>If you’re looking for your next opportunity as an RN, LPN, CNA, or other professional or
+                                aspiring Healthcare professional, Healthcare Done Right can help.</p>
+                        </div>
+                        <p>We are a family of passionate healthcare professionals on a mission to create a condusive
+                            working
+                            environment for every healthcare professional and would-be Professional. And environment
+                            where
+                            everyone feels right doing the right thing. That's actually <strong>HEALTHCARE DONE
+                                RIGHT.</strong></p>
+                        <ul class="about-core">
+                            <li><i class="fas fa-check-double"></i>
+                                <h4>Flexible working hours</h4>
+                            </li>
+                            <li><i class="fas fa-check-double"></i>
+                                <h4>Flexible Placement</h4>
+                            </li>
+                            <li><i class="fas fa-check-double"></i>
+                                <h4>Quality Pay packages</h4>
+                            </li>
+                            <li><i class="fas fa-check-double"></i>
+                                <h4>Career advancement perks</h4>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn-1" href="jobseeker.html">Join the Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img-box">
+                        <div class="img-box"
+                             style="background-image: url({% static 'assets/images/recruit_cover.jpg' %})"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us about-us-2 about-us-home-3 py-100">
+        <div class="container">
+            <div class="row flex-column-reverse flex-lg-row">
+
+                <div class="col-lg-6 ">
+                    <div class="about-img-box">
+                        <div class="img-box"
+                             style="background-image: url({% static 'assets/images/front_image.jpg' %})"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <div class="about-text-box ml-5">
+                        <div class="sec-title ">
+                            <h2>For healthcare professionals</h2>
+                            <h3>For Next Generation Healthcare service providers</h3>
+
+                            <p>We have the right systems in place to hire and retain quality talent for your
+                                establishment.
+                                Whether your staffing needs are interim, contract, or direct hire, we help companies of
+                                just
+                                any size across the United States hire great people </p>
+                            <p>We have an extensive experience hiring for nursing homes, assisted living facilities,
+                                hospitals, hospice centers, home health, and correctional facilities.</p>
+                            <ul class="about-core">
+                                <li><i class="fas fa-check-double"></i>
+                                    <h4>Flexible working hours</h4>
+                                </li>
+                                <li><i class="fas fa-check-double"></i>
+                                    <h4>Flexible Placement</h4>
+                                </li>
+                                <li><i class="fas fa-check-double"></i>
+                                    <h4>Quality Pay packages</h4>
+                                </li>
+                                <li><i class="fas fa-check-double"></i>
+                                    <h4>Career advancement perks</h4>
+                                </li>
+                            </ul>
+                            <div class="row">
+                                <div class="col">
+                                    <a class="btn-1" href="{% url 'employer' %}">Hire Talent</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial testimonial-2 py-100">
+        <div class="container">
+            <!-- <div class="sec-title sec-title-3">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2>Our Testifiers!</h2>
+                        <h3>What our customers have to say</h3>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="testimonial-carousel owl-carousel owl-theme">
+                        <div class="testimonial-carousel-item">
+                            <i class="quote flaticon-left-quote"></i>
+                            <div class="content-text-box">I’m here to say that Edith Pierre is by far the best nurse and
+                                caregiver that we have ever had. She was with us for about 7 years. She had to quit when
+                                Covid hit because she wanted to make sure we stayed safe. We have a special needs son
+                                that
+                                is now 43. He doesn’t walk without assistance and doesn’t talk. It didn’t take her long
+                                until she knew what his different sounds meant. She bathed him, brushed his teeth, made
+                                sure
+                                his hair was combed just right, cooked him food that she knew he liked. She played music
+                                for
+                                him the whole time she was taking care of him ( which he loves music) She talked to him.
+                                A
+                                lot of people that comes in doesn’t do that because he can’t talk back. I could go on
+                                and
+                                on. We miss her so bad but we’re really glad that she’s getting to follow her dream by
+                                helping many people. She is by far the best
+                            </div>
+                            <div class="testimonial-doctor">
+                                <h4>Anita Comeaux</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-item">
+                            <i class="quote flaticon-left-quote"></i>
+                            <div class="content-text-box">CEO of Healthcare Done Right is someone who has dedicated more
+                                a
+                                decade years of her life taking care of others. To her her patience are her family. The
+                                care
+                                and love she gives her patience is not common in the Healthcare industry. Anywhere she
+                                works
+                                she stamps her name with everyone including her coworkers a d bosses. Opening her own
+                                agency
+                                is long overdue. This is a lady that will try to wear your shoes before trying to
+                                analyze a
+                                situation. Who won't want to work with someone that understands your predicaments. The
+                                best
+                                agency so far give it a try. You will be amazed when you meet her, down to earth and
+                                ready
+                                to listen. What more can you ask for
+                            </div>
+                            <div class="testimonial-doctor">
+                                <h4>Maurine Ngong</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-item">
+                            <i class="quote flaticon-left-quote"></i>
+                            <div class="content-text-box">Edith shows empathy to each patient, making a true effort to
+                                put
+                                herself in each patients' shoes. From day one of meeting and working with Edith I’ve
+                                learned
+                                the passion and drive that she has for nursing. She is a strong leader that fosters an
+                                environment of communication and teamwork among the other nurses and staff. She is a
+                                Strong
+                                team player who regularly goes above and beyond to help each staff and gives the best
+                                quality care to each patient. Patients under her care received an excellent education so
+                                that they fully understand care instructions. I enjoyed working with her and she is one
+                                of
+                                the best nurses I have encountered and very much a team player.
+                            </div>
+                            <div class="testimonial-doctor">
+                                <h4>D’Ann Paul</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-item">
+                            <i class="quote flaticon-left-quote"></i>
+                            <div class="content-text-box">Working with Edith was a excellent experience she is very
+                                knowledgeable of her job . You she's a passionate and caring nurse, Edith is also very
+                                humble and a team player anywhere she works she's a great asset to management as well as
+                                co-
+                                workers
+                            </div>
+                            <div class="testimonial-doctor">
+                                <h4>Natasha Austin CNA</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-item">
+                            <i class="quote flaticon-left-quote"></i>
+                            <div class="content-text-box">I have been working with Edith for 3 years now. I have learned
+                                so
+                                much while working with her. When I started, I was a brand-new nurse, fresh out of
+                                school.
+                                She taught me so much. She was always positive, reliable, and dependable. Whenever I was
+                                unsure about something, I would go to her for answers. She has a great work ethic and
+                                always
+                                puts pride into her work. She was a great advocate for her patients. She took very good
+                                care
+                                of them and treated them all equally. Everyone deserves a nurse like Edith. She is
+                                awesome!
+                            </div>
+                            <div class="testimonial-doctor">
+                                <h4>Deidre Harris LPN</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-item">
+                            <i class="quote flaticon-left-quote"></i>
+                            <div class="content-text-box">I had the opportunity to work with Edith 5 years her Charater
+                                speaks for her she believe in doing things correct no short cuts truly carrying person
+                            </div>
+                            <div class="testimonial-doctor">
+                                <h4> Doris Johnson . LPN</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- :: Provide -->
+    <section class="provide provide-home-3" id="contact">
+        <div class="bg-section">
+            <div class="overlay overlay-3"></div>
+        </div>
+        <div class="container">
+            <div class="sec-title sec-title-3">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2>Medical quality care</h2>
+                        <h3>Complete health care solutions for everyone</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- :: Quote And Presentation -->
+            <div class="quote-and-presentation">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form class="quote-box form-contact">
+                            <div class="sec-title">
+                                <h3>schedule appointment!</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="quote-item">
+                                        <span class="lable">name*</span>
+                                        <i class="fas fa-file-signature"></i>
+                                        <input type="text" name="name" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="quote-item">
+                                        <span class="lable">Email*</span>
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="quote-item">
+                                        <span class="lable">Phone*</span>
+                                        <i class="fas fa-phone"></i>
+                                        <input type="tel" name="phone" placeholder="Phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="quote-item">
+                                        <span class="lable">Service*</span>
+                                        <select name="departments">
+                                            <option value="Departments">In-Home respite</option>
+                                            <option value="hemathology">Patient Care</option>
+                                            <option value="neurology">Home & Community support</option>
+                                            <option value="gastroenterology">In-Home Nursing Respite</option>
+                                            <option value="pulmonology">Trach Care & Suction</option>
+                                            <option value="cardiology">Peg-Tube</option>
+                                            <option value="ophthalmology">G-Tube</option>
+                                            <option value="orthopedics">Naso Gastric Tube</option>
+                                            <option value="radiology">Wound Care</option>
+                                            <option value="radiology">LPNs, CNAs, Medical Assistants</option>
+                                            <option value="radiology">ADLs</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="quote-item">
+                                        <span class="lable">Select Date*</span>
+                                        <i class="fas fa-calendar-day"></i>
+                                        <input type="text" data-toggle="datepicker" name="date"
+                                               placeholder="Select Date"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="quote-item">
+                                        <span class="lable">Select Time*</span>
+                                        <i class="fas fa-clock"></i>
+                                        <input id="timeQuote" type="text" class="time" name="time"
+                                               placeholder="Select Date"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="quote-item">
+                                        <button class="btn-1" type="submit">Book an appointment</button>
+                                        <span class="out-message m-2"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="video-presentation">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </body>
+
+    </html>
+{% endblock content %}
